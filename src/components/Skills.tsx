@@ -1,5 +1,5 @@
 
-import { Code, Database, Cloud, Wrench } from 'lucide-react';
+import { Code, Database, Cloud, Wrench, Activity } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -18,11 +18,25 @@ const Skills = () => {
       description: "Full-stack development with modern frameworks and tools."
     },
     {
+      title: "Deep Learning",
+      icon: Brain,
+      gradient: "from-green-500 to-lime-600",
+      skills: ["TensorFlow", "CNNs", "Transfer Learning","Grad-CAM"],
+      description: "Hands-on experience building custom CNNs and explainable AI systems for image classification."
+    },
+    {
       title: "Databases",
       icon: Database,
       gradient: "from-teal-500 to-cyan-600",
       skills: ["MySQL", "MongoDB"],
       description: "Experience with both relational and NoSQL database systems."
+    },
+    {
+      title: "Big Data Tools",
+      icon: Activity, // Or use Database / Activity depending on focus
+      gradient: "from-blue-500 to-cyan-500",
+      skills: ["Kafka", "Spark", "Terraform", "LocalStack"],
+      description: "Designed and deployed real-time data pipelines with stream processing, infrastructure-as-code, and containerization."
     },
     {
       title: "Tools & Platforms",
