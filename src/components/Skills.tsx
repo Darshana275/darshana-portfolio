@@ -1,5 +1,5 @@
 
-import { Code, Database, Cloud, Wrench, Activity } from 'lucide-react';
+import { Code, Database, Cloud, Wrench, Activity, Brain} from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
