@@ -49,9 +49,12 @@ const Hero = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
+            >
               Darshana Punna
-            </div>
+            </button>
 
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
@@ -84,7 +87,7 @@ const Hero = () => {
       {/* Floating Tech Icons */}
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center pt-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
         {/* Floating Tech Icons */}
 <div className="absolute top-20 left-0 w-full h-full pointer-events-none z-0">
   {/* Top Left Corner */}
