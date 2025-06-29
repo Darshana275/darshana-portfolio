@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Brain, Mic,Gamepad, CheckSquare,CloudSun } from 'lucide-react';
+import { ExternalLink, Github, Brain, Mic,Gamepad, CheckSquare,CloudSun, Server } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -15,6 +15,20 @@ const Projects = () => {
         "Custom hybrid CNN with SE attention.",
         "Grad-CAM visual explanations.",
         "Docker containerized deployment."
+      ]
+    },
+    {
+      title: "Real-Time Big Data Analytics on GitHub repositories issues",
+      description: "End-to-end big data pipeline for ingesting, processing, and visualizing GitHub activity using real-time stream processing and cloud-mocked infrastructure.",
+      technologies: ["Docker", "Kafka", "Spark", "MySQL", "React", "Flask", "Terraform", "LocalStack"],
+      icon: Server, // Lucide icon
+      gradient: "from-blue-600 to-teal-400",
+      url: "https://github.com/Darshana275/RealTime-GitHub-Data-Pipeline",
+      features: [
+        "Real-time Kafka ingestion of GitHub data.",
+        "Terraform provisioning with LocalStack S3 emulation.",
+        "Spark streaming jobs for transformation and filtering.",
+        "MySQL data sink and React dashboard visualization."
       ]
     },
     {
